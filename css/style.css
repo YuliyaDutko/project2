@@ -33,7 +33,7 @@ body {
     padding: 0;
 }
 
-.main-menu-item a{
+.main-menu-item a {
     text-decoration: none;
     color: #FFF;
     border-bottom: 2px solid transparent;
@@ -42,6 +42,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
+    transition: border-color 0.3s;
 }
 
 .main-menu-item a:hover{
@@ -73,6 +74,7 @@ body {
 }
 
 .button-projects{
+    display: inline-block;
     background: #4985FF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
@@ -82,6 +84,11 @@ body {
     font-size: 16px;
     line-height: 20px;
     padding: 13px 36px 15px 36px;
+    transition: transform 0.1s ease-in-out 0.1s;
+}
+
+.button-projects:hover{
+    transform: scale(1.2);
 }
 
 /* task */
@@ -117,7 +124,7 @@ body {
     justify-content: space-between;
     list-style-type: none;
     margin: 70px 0 50px 0;
-    padding-inline-start: 0;
+    padding: 0;
 }
 
 .task-list-num{
@@ -247,7 +254,7 @@ body {
 
 .works{
     background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 100% 50% no-repeat, #fff;
-     margin-bottom: 85px;
+    margin-bottom: 85px;
 }
 
 .works-header{
@@ -282,7 +289,7 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    padding-inline-start: 0;
+    padding: 0;
     border-bottom: 1px solid #E0E0E0;
 }
 
@@ -361,8 +368,13 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    padding-inline-start: 0;
+    padding: 0;
 }
+
+.projects-list img:hover{
+    transform: scale(1.2);
+}
+
 
 .projects-buttom{
     align-self: center;
@@ -418,6 +430,7 @@ body {
 .video-img{
     text-align: center;
     position: relative;
+   
 }
 
 .video button{
@@ -435,7 +448,6 @@ body {
     border: 1px solid #FFFFFF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(4.jpg);
- 
 }
 
 
@@ -482,39 +494,40 @@ body {
 }
 
 .mail-form{
-    width: 489px;
-    height: 45px;
+    max-width: 489px;
+    max-height: 45px;
     border: 1px solid #F2F2F2;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
 }
 
 .mail-form input{
-    width: 299px;
-    height: 45px;
+    max-width: 299px;
+    max-height: 45px;
     border-style: none;
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
     color: #999999;
-    padding-bottom: 13px;
-    padding-left: 33px;
+    background-color: transparent;
+    outline: none;
+    padding: 15px 149px 13px 33px;
     
 }
 
 .mail-form button{
-    width: 183px;
-    height: 45px;
+    max-width: 183px;
+    max-height: 43px;
     background: #4985FF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 0px 30px 30px 0px;
+    border-color: transparent;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
-    padding: 13px, 36px, 15px, 26px;
-   
+    padding: 13px 36px 15px 26px;
 }
 
 
@@ -535,10 +548,8 @@ body {
 }
 
 .footer-class-list ul{
-    padding-inline-start: 0;
+    padding: 0;
     margin: 0px; 
-    
-    
 }
 
 .footer-class-list li{
